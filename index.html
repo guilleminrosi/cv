@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Guillemin Rosi - CV en ligne</title>
+            <!-- Lien vers la feuille de style CSS -->
+            <link rel="stylesheet" href="style.css">
+            <!-- Lien vers une police Google Fonts (ex. Open Sans) -->
+            <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+            <script src="https://unpkg.com/lucide@latest"></script>
+        </head>
+    <body>
+
+        <!-- NAVIGATION (sidebar + menu mobile) -->
+        <nav class="sidebar" id="sidebar">
+            <button id="menu-toggle" aria-label="Ouvrir le menu">
+                <i data-lucide="menu"></i>  
+            </button>
+            <ul id="nav-items">
+                <li><a href="#accueil" title="Accueil"><i data-lucide="home"></i></a></li>
+                <li><a href="#objectif" title="Objectif"><i data-lucide="target"></i></a></li>
+                <li><a href="#experiences" title="Expériences"><i data-lucide="briefcase"></i></a></li>
+                <li><a href="#parcours" title="Parcours"><i data-lucide="graduation-cap"></i></a></li>
+                <li><a href="#projets" title="Projets"><i data-lucide="flask-conical"></i></a></li>
+                <li><a href="#association" title="Association"><i data-lucide="theater"></i></a></li>
+                <li><a href="#contact" title="Contact"><i data-lucide="mail"></i></a></li>
+            </ul>
+        </nav>
+
+        <!-- SECTION ACCUEIL -->
+        <section class="section accueil fade-element" id="accueil">
+            <div class="container">
+                <h1>Guillemin Rosi</h1>
+                <p class="intro">Journaliste en reconversion vers la Data Analysis.</br>Passionné, curieux, engagé.</p>
+                <button id="btn-biographie">Voir la biographie</button>
+                <!-- Texte de biographie masqué au départ -->
+                <div id="biographie" class="biographie">
+                    <p>
+                        Je me nomme <b>Guillemin Rosi dit Rozzi</b>. D'origine italienne, je suis né à Grasse, dans le sud de la France,
+                        il y a une (toute petite) quarantaine d'année. Enfance en Normandie, collège et lycée à Cannes, j'ai suivi des études
+                        d'<b>info-com</b> à Nice, puis de <b>science politique</b> à Lyon.</p>
+                        <p>Après quelques expériences en <b>presse écrite</b> et un déménagement à Paris,
+                        je me suis tournée vers l'<b>entrepreneuriat écologique</b> durant quelques années, avant de revenir au <b>journalisme</b>, <b>télévisuel</b> cette fois-ci.</p>
+                        <p>Ces 7 dernières années ont donc été consacrées à l'<b>info en continu</b>, d'abord <b>internationale</b>, <b>puis locale</b>, à Lyon, où j'ai souhaité me réinstaller.
+                        Désormais fixé dans le Beaujolais (avec femme et enfants), j'ai désiré <b>changer de voix</b>, ne trouvant plus dans le journalisme d'actu
+                        de satisfactions professionnelles suffisantes.</p>
+                        <p>J'ai donc opté pour la <b>data analysis</b>, qui en réalité est un
+                        <b>prolongement</b> de ce que j'ai pu faire dans les médias (notamment durant la Covid, mais pas seulement), et qui m'a toujours
+                        beaucoup attiré. J'espère donc que nous ferons un bout de chemin ensemble.
+                    </p>
+                <!-- (on complètera ici avec la biographie complète) -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION PHOTO DE PROFIL -->
+        <section class="section photo-profil fade-element" id="photo-profil">
+          <div class="parallax-photo"></div>
+        </section>
+
+        <!-- SECTION OBJECTIF PROFESSIONNEL -->
+        <section class="section objectif fade-element" id="objectif">
+            <div class="container">
+                <h2>Objectif professionnel</h2>
+                <p>
+                    <b>Je me reconvertis</b> aujourd’hui <b>dans la data analysis</b>. "Rien à voir avec le journalisme", seriez-vous tenté de penser.
+                    Vous auriez tort. Le caractère très numérique dont sont imprégnées les représentations associées à ce métier masquent en réalité de <b>
+                    nombreuses similitude entre l'analyse de données et le journalisme</b>.</p> 
+                    <p>Ce dernier à pour mission de rapporter le réel, à travers des faits, de les contextualiser,
+                    et dans l'idéal d'y adjoindre une analyse. On de demande pas autre chose à un data analyst. Si ce n'est que la nature et le traitement des faits rapportés
+                    diffèrent quelque peu. Et encore, s'<b>il existe des data journalist</b>, c'est bien que l'analyse de grands ensembles de données est une part intrinsèque du métier
+                    du journaliste. Nous l'avons vu pendant la période de la Covid, et nous le voyons régulièrement lorsqu'il s'agit pour un journal de rapporter
+                    les grandes tendances de l'immobilier, d'analyser les évolutions de taxe foncière, ou de se plonger, chaque année, dans le classement des meilleurs collègue et
+                    lycées de France.</p>
+                    <p><b>Je vois</b> ainsi <b>la data analysis comme un prolongement de mon métier</b>, un angle du journalisme que je tient à explorer par goût des chiffres et
+                    de l'outil informatique. Durant ces denrières années, <b>j'avais une routine en démarrant ma session de travail : me connecter au Monde, et ouvrir Excel</b>.
+                    <b>Le passage du l'univers de l'un à l'univers de l'autre me semble parfaitement naturel</b>, et je suis certain de retrouver, à plus ou moins long terme, ce qui a fini
+                    par me manquer après des années dans le journalisme d'actualité quotidienne : <b>comprendre le fonctionnement du monde qui m'entoure</b>.</p>
+                    <p>Reste encore à <b>devenir data analyst</b>. J'ai évidemment quelques <b>connaissances solides en analyse</b>, me débrouille pas trop mal avec <b>Excel</b>, <b>rédige correctement</b>,
+                    suis à<b> l'aise avec l'informatique</b> et connais quelques <b>rudiments de HTML et de CSS</b>, comme ce site le démontre. Mais Python et SQL me sont encore presque inconnus.
+                    J'ai donc opté pour un <b>bootcamp au Wagon</b>, à Lyon, école reconnue dans ce type de <b>formation</b> et <b>qui devrait m'apporter</b> sinon tout le savoir, à minimam <b>
+                    les bases dont j'aurai besoin pour être professionnellement opérationnel</b>, et gagner en compétences sur le terrain et par mes propres moyens.</p>
+                    <p>Dans l'idéal, je souhaiterais consacrer mes actuelles et futures compétences à un <b>projet ayant du sens</b>, pourquoi pas au sein une ONG ou d'une entité publique.</p>
+                    <p>Avant tout, <b>je désir surtout entamer une nouvelle période de ma vie dans un domaine qui me stimule à nouveau</b>.</p>
+                </p>
+            </div>
+        </section>
+
+
+        <!-- SECTION EXPÉRIENCES PROFESSIONNELLES -->
+        <section class="section experiences fade-element" id="experiences">
+          <div class="container">
+              <h2>Carrière</h2>
+
+              <!-- CARTE : Journalisme -->
+              <div class="card fade-element">
+                  <div class="logos-entreprises">
+                      <img src="images/progres_logo.png" alt="Le Progrès" data-label="Le Progrès">
+                      <img src="images/lyon_bondy_blog_logo.png" alt="Lyon Bondy Blog" data-label="Lyon Bondy Blog">
+                      <img src="images/le_monde_academie_logo.png" alt="Le Monde Académie" data-label="Le Monde Académie">
+                      <img src="images/rt_france_logo.png" alt="RT France" data-label="RT France">
+                      <img src="images/bfm_lyon_logo.png" alt="BFM Lyon" data-label="BFM Lyon">
+                  </div>
+
+                  <h3>Journalisme</h3>
+                  <h6>2018 - 2025</h6>
+
+                  <p>C'est en <b>2009</b> au <b>Progrès</b>, à Lyon (Bron plus exactement) que j'ai fait <b>mes premières armes</b>. Un stage en presse écrite quotidienne régionale en 2009,
+                  suivies de quelques piges. Quelques articles au <b>Lyon Bondy Blog</b> l'année suivante, et quelques papiers au <b>Monde Académie</b> en <b>2013 et 2014</b>, dont
+                  une enquête sur la contrebande d'essence à la frontière algéro-tunisienne (<a href="#" id ="open-pdf" class="lien-pdf">voir l'article ici</a>).</p>
+                      <!-- Modale PDF -->
+                      <div id="pdf-modal" class="modal hidden">
+                      <div class="modal-content">
+                          <button class="close-modal">&times;</button>
+                          <iframe src="documents/article_le_monde_contrebante.pdf" width="100%" height="600px" frameborder="0"></iframe>
+                      </div>
+                      </div>
+                  <p>Après quelque années passées comme entrepreneur, j'ai repris du service en 2018, en presse audiovisuelle cette fois, sur <b>RT France</b>, d'abord comme <b>deskeur</b>,
+                  chargé de la confection des <b>sujets d'actualité internationale</b>, puis comme <b>reporter</b>, sur le terrain et en plateau. <b>J'ai quitté mon poste fin février 2022</b> à l'invasion de l'Ukraine
+                  par la Russie, qui détenait la chaîne.</p>
+                  <p>J'ai ensuite rejoint <b>BFM Lyon</b> quelque mois plus tard, d'abord comme <b>JRI/reporter</b> à la pige, puis comme <b>producer</b> et <b>chef d'édition</b> remplaçant. J'ai en réalité rempli
+                  de <b>nombreuses missions</b> au sein de cette rédaction, comme il est d'usage dans les TV locales, aux moyens humains limités.</p>
+                  <p>Ces 7 dernières années, j'ai ainsi eu l'occasion de <b>tourner</b>, <b>monter</b> et <b>voicer</b> des <b>sujets</b>, <b>incarner</b> des <b>chroniques</b>, <b>doubler</b> des <b>documentaires</b> et des <b>interviews</b>, <b>couvrir</b> des <b>manifestations</b> ou des <b>évènements</b> <b>diplomatiques</b>, gérer de nombreux <b>duplex</b>,
+                  d'assurer la <b>conduite antenne</b>, d'aider au <b>desk</b>, d'<b>éditer</b> et <b>réaliser</b> les <b>JT</b>, en plus de mes missions de <b>producing</b> impliquant la <b>gestion</b> des <b>tickers</b>, la <b>programmation</b> et l'<b>édition</b> des <b>magazines</b> et ainsi
+                  que la <b>programmation</b> des <b>invités plateau</b>, le tout sans compter sur la gestion occasionnelle des <b>éditions spéciales</b> et des <b>breaking news</b>.</p>
+
+                  <div>
+                      <ul class="competences">
+                          <li class="technique">Tournage</li>
+                          <li class="editorial">Vérification des sources</li>
+                          <li class="outil">Dalet</li>
+                          <li class="softskill">Autonomie</li>
+                          <li class="technique">Montage</li>
+                          <li class="editorial">Écriture journalistique</li>
+                          <li class="outil">Opus</li>
+                          <li class="production">Réalisation JT</li>
+                          <li class="editorial">Incarnation</li>
+                          <li class="softskill">Culture G</li>
+                          <li class="technique">Voice-over</li>
+                          <li class="outil">Kit Mojo</li>
+                          <li class="softskill">Gestion de l'urgence</li>
+                          <li class="production">Producing</li>
+                          <li class="editorial">Recherche</li>
+                          <li class="technique">Duplex</li>
+                          <li class="production">Édition</li>
+                          <li class="outil">Excel/Google sheet</li>
+                          <li class="softskill">Travail en équipe</li>
+                          <li class="production">Conduite d'antenne</li>                            
+                          <li class="editorial">Interviews</li>
+                          <li class="outil">Bureautique</li>
+                          <li class="softskill">Réseau</li>
+                      </ul>
+                  </div>
+
+                  <!--<div class="legende-competences">
+                      <span class="badge technique">Technique</span>
+                      <span class="badge editorial">Éditorial</span>
+                      <span class="badge production">Production</span>
+                      <span class="badge outil">Outils</span>
+                      <span class="badge softskill">Soft Skills</span>
+                  </div>-->
+
+                  <!-- Carrousel vidéo local -->
+                  <div class="carrousel">
+                      <div class="carte-video">
+                          <video controls preload="metadata">
+                              <source src="videos/RT_plasma_2%_covid.mp4" type="video/mp4">
+                              Votre navigateur ne supporte pas la lecture vidéo.
+                          </video>
+                          <p class="video-description">Chronique "plasma"<br>"2% des hospitalisés liés au Covid,<br>une statistique à contextualiser"
+                              <br>RT France - Novembre 2021</p>
+                      </div>
+
+                      <div class="carte-video">
+                          <video controls preload="metadata">
+                              <source src="videos/chronique_planete_bfm_lyon.mp4" type="video/mp4">
+                              Votre navigateur ne supporte pas la lecture vidéo.
+                          </video>
+                          <p class="video-description">Chronique plateau<br>Lyon : une station mobile pour laver son vélo<br>BFM Lyon - 13 mai 2024</p>
+                      </div>
+
+                      <div class="carte-video">
+                          <video controls preload="metadata">
+                              <source src="videos/pad_prostitution_gerland_bfm_lyon.mp4" type="video/mp4">
+                              Votre navigateur ne supporte pas la lecture vidéo.
+                          </video>
+                          <p class="video-description">Reportage<br>"À Gerland, les parents sont inquiets de la présence<br>de prostituées près des terrains de jeu pour enfants"
+                              <br>BFM Lyon - 22 novembre 2022</p>
+                      </div>
+
+                      <div class="carte-video">
+                          <video controls preload="metadata">
+                              <source src="videos/rt_chronique_plato_lanceurs_alerte.mp4" type="video/mp4">
+                              Votre navigateur ne supporte pas la lecture vidéo.
+                          </video>
+                          <p class="video-description">Chronique plateau<br>"Dernière séance au Sénat sur,<br>la protection des lanceurs d'alerte"
+                              <br>RT France - 20 janvier 2022</p>
+                      </div>
+
+                      <div class="carte-video">
+                          <video controls preload="metadata">
+                              <source src="videos/rt_duplex_reforme_assurance_chomage.mp4" type="video/mp4">
+                              Votre navigateur ne supporte pas la lecture vidéo.
+                          </video>
+                          <p class="video-description">Duplex<br>"La réforme de l’assurance chômage<br>validée par le Conseil d’Etat"
+                              <br>RT France - 22 octobre 2021</p>
+                      </div>
+
+                      <div class="carte-video">
+                          <video controls preload="metadata">
+                              <source src="videos/bfm_lyon_duplex_squat.mp4" type="video/mp4">
+                              Votre navigateur ne supporte pas la lecture vidéo.
+                          </video>
+                          <p class="video-description">Duplex<br>"À Lyon, un squatteur attaque<br>le propriétaire de son squat en justice"
+                              <br>BFM Lyon - 28 février 2023</p>
+                      </div>
+                      
+                      <div class="carte-video">
+                          <video controls preload="metadata">
+                              <source src="videos/rt_sujet_tensions_israel.mp4" type="video/mp4">
+                              Votre navigateur ne supporte pas la lecture vidéo.
+                          </video>
+                          <p class="video-description">Sujet<br>"Tensions toujours palpables à Jérusalem<br>malgré le verdict des juges reporté"
+                              <br>RT France - 9 mai 2021</p>
+                      </div>
+
+                      <div class="carte-video">
+                          <video controls preload="metadata">
+                              <source src="videos/no-futur-doc_rt_france.mp4" type="video/mp4">
+                              Votre navigateur ne supporte pas la lecture vidéo.
+                          </video>
+                          <p class="video-description">Narration documentaire<br>"No Future, Fléaux de notre temps.<br>La disparition des animaux"
+                              <br>RT France - 2021</p>
+                      </div>
+
+                      <div class="carte-video">
+                          <video controls preload="metadata">
+                              <source src="videos/bfm_lyon_reportage_bombes_villefranche.mp4" type="video/mp4">
+                              Votre navigateur ne supporte pas la lecture vidéo.
+                          </video>
+                          <p class="video-description">Narration documentaire<br>"Villefranche, trois bombes de la seconde<br>guerre mondiale repêchées dans la Saône"
+                              <br>BFM Lyon - 14 novembre 2022</p>
+                      </div>
+
+                  </div>
+              </div>
+
+              <!-- CARTE : Entrepreneuriat -->
+              <div class="card fade-element">
+                  <div class="logos-entreprises">
+                      <img src="images/mon_passeport_renovation_logo.png" alt="Mon Passeport Rénovation" data-label="Mon Passeport Rénovation">
+                  </div>
+
+                  <h3>Entrepreneuriat — Mon Passeport Rénovation</h3>
+                  <h6>2015 - 2018</h6>
+
+                  <p>
+                    À l'origine de ce projet, mon frère, <b>Adrien Rosi</b>, autodidacte génial et qui <b>souhaitait</b> œuvrer à la <b>transition écologique</b>.
+                    Je me suis associé à son initiative et ensemble, nous avons fondé <b>Mon Passeport Rénovation</b>, une <b>start-up</b>
+                    dont le but était d'<b>accompagner les particuliers dans leur projet de rénovation énergétique de leur logement</b>
+                  </p>
+                  <p>
+                    <b>Calcul des déperditions</b> grâce à un <b>algorithme maison performant</b>, <b>recommandations de travaux</b>, redirection vers les <b>artisans labelisés RGE</b> et disposant des <b>certifications Qualibat</b> requises,
+                  constitution des dossiers d'<b>aides aux financement</b>... <b>Mon Passeport Rénovation</b> se voulait être le <b>tiers de confiance</b> de la <b>rénovation énergétique</b>,
+                  des années avant Mon Accompagnateur Rénov
+                  </p>
+                    <p>En <b>2017</b>, nous avons réalisé une <b>levée de fonds de 450 000 €</b>, pour l'essentiel en <b>media for equity</b> auprès du groupe de presse <b>Reworld Media</b>, qui est ainsi entré au capital de la société.
+                  </p>
+                  <p>
+                    Au cours des quelques 3 années qu'a duré cette aventure entrepreneuriale, mes <b>fonctions</b> ont été immensément <b>variées</b>, de la <b>rédaction des statuts</b> au <b>débogage de l'algorithme</b>
+                    en passant par la <b>supervision du plan media</b> négocié avec notre investisseur. Bref, il a fallu un peu tout faire, et malgré la <b>fin de Mon Passeport Rénovation en 2018</b>, n'ayant pu nous imposer sur
+                    le marché de la rénovation énergétique comme nous le souhaitions, ce projet a été une <b>expérience intense</b>, <b>insolite</b> et plus que <b>formatrice</b>.
+                  </p>
+
+                  <ul class="competences">
+                      <li class="production">Création d'entreprise</li>
+                      <li class="outil">Gimp</li>
+                      <li class="technique">Notions de code</li>
+                      <li class="production">Business development</li>
+                      <li class="softskill">Rénovation énergétique</li>
+                      <li class="production">Stratégie commerciale et marketing</li>
+                      <li class="softskill">Gestion administrative</li>
+                      <li class="editorial">Veille réglementaire</li>
+                      <li class="production">Accompagnement client</li>
+                      <li class="outil">Notepad++</li>
+                      <li class="production">Plan média</li>
+                      <li class="outil">Suite office</li>
+                      <li class="editorial">Publireportages</li>
+                  </ul>
+
+                  <!-- Carrousel photo -->
+                  <div class="carrousel">
+                    <div class="carte-visuel">
+                      <img src="images/front_site_mpr.png" alt="Visuel 1" class="zoomable">
+                      <p class="visuel-description">Prototype plateforme 2016</p>
+                    </div>
+                    <div class="carte-visuel">
+                      <img src="images/publi_mpr.jpg" alt="Visuel 2" class="zoomable">
+                      <p class="visuel-description">Logo original</p>
+                    </div>
+                    <div class="carte-visuel">
+                      <img src="images/mpr_pub.jpg" alt="Visuel 3" class="zoomable">
+                      <p class="visuel-description">Présentation client</p>
+                    </div>
+                    <div class="carte-visuel">
+                      <img src="images/mpb_abo_m&t.jpg" alt="Visuel 4" class="zoomable">
+                      <p class="visuel-description">Présentation client</p>
+                    </div>
+
+                  </div>
+              </div>
+
+              <!-- CARTE : Expériences diverses -->
+              <div class="card fade-element">
+                <div class="logos-entreprises">
+                  <img src="images/orange_logo.png" alt="Logo Orange" data-label="Orange">
+                  <img src="images/media_saturn_logo.png" alt="Media Saturn" data-label="Media Saturn">
+                  <img src="images/cannes_logo.png" alt="Ville de Cannes" data-label="Ville de Cannes">
+                  <img src="images/mcdonalds_logo.png" alt="McDonald's" data-label="McDonald's">
+                  <img src="images/champion_logo.png" alt="Champion" data-label="Champion">
+                  <img src="images/cannes_jeunesse_logo.png" alt="Cannes Jeunesse" data-label="Cannes Jeunesse">
+                  <img src="images/globe_logo.png" alt="Globe Diffusion" data-label="Globe Diffusion">
+                  <img src="images/nicolas_logo.png" alt="Nicolas" data-label="Nicolas">                    
+                </div>
+
+                <h3>Orange & autres jobs alimentaires</h3>
+                <h6>2006 - 2018</h6>
+
+                <p>
+                  Soyons clair, <b>faire la liste</b> de la totalité de mes expériences de jeunesse n'aurait <b>aucun intérêt</b> ici. Ils s'agissaient de <b>jobs</b> alimentaires,
+                  pour la plupart <b>ennuyant</b> et <b>mal payés</b>. Des <b>jobs alimentaires</b>.
+                </p>
+                <p>
+                  Au moins deux des entreprises pour lesquelles j'ai travaillé n'existent plus aujourd'hui, et je n'ose
+                  décrire certaines des missions d'intérim que j'ai dû accepter pour <b>payer mes études</b> (une affaire de moutarde et de déguisement de pompier américain).
+                </p>
+                <p>  
+                  Je me permets tout de même de rapporter ici les <b>activités régulières</b> que j'ai eu pour <b>Orange</b> (anciennement France Télécom), sous divers contrats et <b>de façon intermittente pendant 7 ans</b>.
+                  Durant mes études, immédiatement après ces dernières, lorsque mon entreprise ne me versait pas de salaire, etc., et <b>au sein d'une petite dizaine de boutiques</b>.
+                  De quoi mettre du beurre dans les épinards.
+                </p>
+
+                <ul class="competences">
+                  <li class="softskill">Relation client & conseil</li>
+                  <li class="outil">MAC OS</li>
+                  <li class="softskill">Vente de services et produits tech</li>
+                  <li class="production">Gestion de stocks</li>
+                  <li class="outil">Android</li>
+                  <li class="softskill">KPI</li>
+                  <li class="outils">Windows Phone</li>
+                  <li class="production">Gestion de caisse</li>
+                  <li class="softskill">Adaptabilité</li>
+                  <li class="outils">BlackBerry OS</li>
+                  <li class="production">Service technique</li>
+                </ul>
+              </div>
+          </div>
+        </section>
+
+        <!-- SECTION PARCOURS SCOLAIRE -->
+        <section class="section parcours fade-element" id="parcours">
+          <div class="container">
+            <h2>Parcours scolaire & universitaire</h2>
+
+            <div class="timeline">
+
+              <div class="timeline-item">
+                <div class="timeline-date">2006</div>
+                <div class="timeline-content">
+                  <h3>Bac Scientifique</h3>
+                  <p>Lycée Carnot, Cannes</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2009</div>
+                <div class="timeline-content">
+                  <h3>Licence Information & Communication</h3>
+                  <p>Université de Nice Sophia Antipolis</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2012</div>
+                <div class="timeline-content">
+                  <h3>Séminaire IHEDN</h3>
+                  <p>Institut des Hautes Études de Défense Nationale</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2012</div>
+                <div class="timeline-content">
+                  <h3>Master de Sciences Politiques, spécialité Relations internationales et défense</h3>
+                  <p>Université Lyon 3</p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-date">2013-2014</div>
+                <div class="timeline-content">
+                  <h3>Monde Académie</h3>
+                  <p>Formation pratique au journal Le Monde</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION PROJETS RÉCENTS -->
+        <section class="section projets fade-element" id="projets">
+          <div class="container">
+            <h2>Projets récents</h2>
+            <p>
+              En 2024-2025, j’ai participé à une <strong>résidence croisée</strong> organisée par l’Université de Lyon, réunissant journalistes et chercheurs autour de la thématique :
+              <em>“Le temps de se comprendre pour mieux faire ensemble.”</em>
+            </p>
+
+            <p>
+              Ce travail a donné lieu à plusieurs productions en cours de publication, dont :
+            </p>
+
+            <ul class="projets-list">
+              <li>🎧 Un podcast (à venir très prochainement)</li>
+              <li>📚 Une bande dessinée collaborative</li>
+            </ul>
+
+            <p>
+              👉 <a href="https://popsciences.universite-lyon.fr/ressources/residence-croisee-chercheur-journaliste-le-temps-de-se-comprendre-pour-mieux-faire-ensemble-1-dossier-popsciences-journalisme-et-science-quelles-relations/" target="_blank">
+                En savoir plus sur le site de Pop’Sciences
+              </a>
+            </p>
+
+            <img src="images/residence-photo.jpg" alt="Illustration de la résidence" class="illustration">
+            
+            
+          </div>
+        </section>
+
+
+<!-- SECTION ACTIVITÉ ASSOCIATIVE -->
+<section class="section association fade-element" id="association">
+  <div class="container">
+    <h2>Activité associative</h2>
+
+    <p>
+      Depuis 3 ans, je suis secrétaire de l’association <strong>Larsen Affect</strong>, une compagnie de théâtre amateur.
+      En 2025, je joue sur la scène de la salle Paul Garçin à Lyon dans une pièce de <em>Yasmina Reza</em>, mise en scène par Clémence Schirmer.
+    </p>
+
+    <img src="images/logo-larsen.png" alt="Logo Larsen Affect" class="logo-association">
+
+    <div class="gallery">
+      <img src="images/theatre-1.jpg" alt="Répétition 1">
+      <img src="images/theatre-2.jpg" alt="Représentation">
+    </div>
+  </div>
+</section>
+
+
+<!-- SECTION CONTACT -->
+<footer class="section contact" id="contact">
+  <div class="container">
+    <h2>Me contacter</h2>
+    <div class="contact-items">
+      <div class="contact-item">
+        <i data-lucide="map-pin"></i>
+        <p>146 rue Etienne Poulet <br/>69400<br/>Villefranche-sur-Saône</p>
+      </div>
+      <div class="contact-item">
+        <i data-lucide="mail"></i>
+        <p><a href="mailto:adresse@email.fr">guillemin.rosi@gmail.com</a></p>
+      </div>
+      <div class="contact-item">
+        <i data-lucide="phone"></i>
+        <p><a href="tel:+33000000000">+33 6 16 82 81 15</a></p>
+      </div>
+      <div class="contact-item">
+        <i data-lucide="linkedin"></i>
+        <p><a href="https://www.linkedin.com/in/guillemin-rosi/" target="_blank">LinkedIn</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Autres contenus -->
+
+<!-- MODAL POUR IMAGE EN GRAND (hors de toute carte ou container) -->
+<div id="image-modal" class="modal hidden">
+  <span class="close-modal" onclick="closeImageModal()">&times;</span>
+  <img class="modal-img" id="modal-img" src="" alt="Image en grand">
+</div>
+
+</body>
+
+
+  <!-- Lien vers le fichier JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
