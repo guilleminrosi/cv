@@ -993,6 +993,14 @@ font-size: 1rem;
   }
 }
 
+/* ✅ Fallback pour mobile : afficher les éléments fade directement */
+@media (max-width: 768px) {
+  .fade-element {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
 /* Vidéo responsive SI JAMAIS J'AI DES VIDEOS SEULES
 .card video {
   border-radius: 10px;
